@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentacion</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="formulario.html">Formulario de inscripccion</a>
+    </nav>
+    <main>
+        <h1> Solicitud para Tarjeta de Solidaridad</h1>
+        <section>
+            
+            <h3>Formulario de Solicitud</h3>
+            <form action=" https://httpbin.org/post" method="post">
+                <input type="text" placeholder="Indica tu Nombre" name="nombre"> <br>
+                <input type="text" placeholder="Indica tu Apellido" name="apellido"> <br>
+                <input type="number" placeholder="Indica tu Cedula" name="cedula"> <br>
+                <input type="date" placeholder="Fecha de Nacimiento" name="fecha_nacimiento"> <br>
+
+                <h3>¿Eres beneficiario de algun Plan del Gobierno?</h3>
+                <select name="beneficiario">
+                    <option value="Si">Si</option>
+                    <option value="No">No</option>
+                </select> <br>
+
+                <h3>¿Cuáles son tus pasatiempos favoritos?</h3>
+                <input type="checkbox" name="casilla" value="acepto"> Cantar<br>
+                <input type="checkbox" name="casilla" value="acepto"> Jugar<br>
+                <input type="checkbox" name="casilla" value="acepto"> Cocinar<br>
+                <input type="checkbox" name="casilla" value="acepto"> Leer<br>
+                <input type="checkbox" name="casilla" value="acepto"> Dibujar<br>
+                <input type="checkbox" name="casilla" value="acepto"> Estudiar<br>
+
+                <h3>¿Cuál es tu rango de ingresos mensuales?</h3>
+                <input type="radio" name="genero" value="De $5,000 a $10,000"> De $5,000 a $10,000 <br>
+                <input type="radio" name="genero" value="De $10,000 a $20,000"> De $10,000 a $20,000 <br>
+                <input type="radio" name="genero" value="Más de $20,000"> Más de $20,000 <br>
+                 
+                <h3>Comentarios</h3>
+                <textarea name="comentarios" placeholder="Escribe tus comentarios"></textarea> <br>
+
+
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+
+
+            </form>
+        </section>
+    </main>
+</body>
+</html>
